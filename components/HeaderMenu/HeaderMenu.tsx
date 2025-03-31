@@ -1,28 +1,12 @@
 'use client';
 
-import { IconChevronDown } from '@tabler/icons-react';
-import {
-  Anchor,
-  Box,
-  Burger,
-  Button,
-  Center,
-  Divider,
-  Drawer,
-  Group,
-  HoverCard,
-  ScrollArea,
-  UnstyledButton,
-  useMantineTheme,
-} from '@mantine/core';
+import { Box, Burger, Button, Divider, Drawer, Group, ScrollArea } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 // import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderMenu.module.css';
 
 export function HeaderMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
 
   return (
     <Box pb={120}>
